@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:site_name" content="Developments Code" />
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/868889259816386631/873973886608359484/gB6Q34lUWZLUwAAAABJRU5ErkJggg.png" />
+<meta name="theme-color" content="#446cec" />
+<title>Developments </title>
+<link rel="icon" href="https://cdn.discordapp.com/attachments/868889259816386631/873973886608359484/gB6Q34lUWZLUwAAAABJRU5ErkJggg.png" type="image/x-icon" />
+<link rel="stylesheet" href="/index.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+<nav style="margin-left:5%;margin-right:5%;" class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top" id="mainNav">
+<a class="deneme navbar-brand" style="margin-left: 10px;padding:10px" href="/"><img src="https://cdn.discordapp.com/attachments/868889259816386631/873973886608359484/gB6Q34lUWZLUwAAAABJRU5ErkJggg.png" style="border-radius: 100%" width="30" height="30">
+Developments  
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="deneme nav-item dropdown">
+  <a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="fas fa-code" aria-hidden="true"></i> Kodlar</a>
+        <div class="dropdown-menu bg-transparent">
+  <a class="dropdown-item font-weight-bold" href="/normal" style="color: #ffcc00;"><i class="fab fa-js-square"></i> Normal Kodlar</a>
+<a class="dropdown-item font-weight-bold" href="/gold" style="color: #ffcc00;"><i class="fab fa-js-square"></i> Gold Kodlar</a>
+          <a class="dropdown-item" href="/diamond" style="color: #ffcc00;"><i class="fab fa-js-square"></i> Elmas Kodlar</a>
+          <a class="dropdown-item" href="/ready">Hazır Sistemler</a>
+<a class="dropdown-item font-weight-bold" href="/altyapi" style="color: #ffcc00;"><i class="fas fa-file-code"></i> Altyapı</a>
+          <div class="dropdown-divider" style="border-top:1px solid #20262c"></div>
+<a class="dropdown-item font-weight-bold" href="/fromyou" style="color: #ffcc00;"><i class="fas fa-users" aria-hidden="true"></i> Sizden Gelenler</a>
+        </div>
+      </li>
+<li class="deneme nav-item dropdown">
+<a class="nav-item nav-link active  dropdown-toggle" href="#" data-toggle="dropdown"><i class="far fa-gem"></i> Özel Kodlar</a>
+<div class="dropdown-menu bg-transparent">
+<a class="dropdown-item font-weight-bold" href="Gidecek Yerin Linki" style="color: #ffcc00;"><i class="fas fa-plus-square"></i></i> Yakında !</a>
+<a class="dropdown-item font-weight-bold" href="Gidecek Yerin Linki" style="color: #ffcc00;"><i class="fas fa-terminal"></i></i> Yakında !</a>
+<a class="dropdown-item font-weight-bold" href="Gidecek Yerin Linki" style="color: #ffcc00;"><i class="fas fa-plus-circle"></i></i> Yakında !</a>
+</div>
+</li>
+      <li class="deneme nav-item">
+<a class="nav-item nav-link active" href="/discord"><i class="fas fa-hand-holding-usd" aria-hidden="true"></i> Discord</a>
+      </li>
+      <li class="deneme nav-item">
+<a class="nav-item nav-link active" href="/information"><i class="fas fa-info-circle" aria-hidden="true"></i> S.S.S.</a>
+      </li>
+      <li class="deneme nav-item">
+<a class="nav-item nav-link active" href="/authorized"><i class="fas fa-user-shield" aria-hidden="true"></i> Yetkililerimiz</a>
+
+      </li>
+    </ul>
+
+<button id="back-to-top-btn" class="btnEntrance" style="display: block;"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+    <% if (user) { %>
+    <ul class="navbar-nav" style="margin-right: 20px;">
+      <% if (reqMember && reqMember.hasPermission(8)) { %>
+      <li class="deneme nav-item">
+      <a class="nav-item nav-link active" href="/admin">🍔 Admin Paneli</a>
+      </li>
+      <% } %>
+      <li class="deneme nav-item">
+<a class="nav-item nav-link active" href="/share"><i class="fas fa-plus" aria-hidden="true"></i> Kod Paylaş</a>
+      </li>
+
+      <li class="deneme nav-item dropdown">
+        <a class="nav-item nav-link active dropdown-toggle"><%= user.username %></a>
+        <div class="dropdown-menu bg-transparent dropdown-menu-right">
+         <a class="btn btn-outline-info" href="/profile/<%= user.id %>">Profil</a>
+          <div class="dropdown-divider"></div>
+           <a class="btn btn-outline-danger" href="/logout">Çıkış Yap</a>
+
+
+        </div>
+      </li>
+
+    </ul>
+
+    <% } else { %>
+<a class="btn btn-outline-warning" style="margin-right: 20px; filter: invert(1);" href="/login">Giriş Yap</a>
+    <% } %>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+<link rel="stylesheet" href="https://purple-silver-helicona.glitch.me/style.css">
+<link rel="icon" href="images/cedar.png">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+<div class="loader-wrapper">
+<span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<section class="banner" id="home">
+<div class="overlay"></div>
+<div class="content" data-aos="fade-right" data-aos-duration="1000">
+<h2>
+Merhaba,<br>
+<span>Hoş Geldin!</span>
+</h2>
+<p>
+Discord Kod Paylaşım Sitesi! Bu Siteden Dilediğin Kodlara Ücretsiz Ve Hızlı Bir Şekilde Ulaşabilirsin.Siteye Giriş Yapıp Kodlara Ulaşabilirsin. Developments Code Kod Paylaşım Sitesi, En İyisi Olmaya Geliyoruz.
+</p>
+<a href="https://discord.gg/P2kuAvEz2B" style="text-decoration:none;background-color:#446cec" target="_blank"><i class="fab fa-discord" style="margin-right: 10px; font-size: 20px;"></i>Discord Sunucumuz</a>
+</div>
+</section>
+
+<section class="services p-t-30" id="about">
+<h1><span>Developments Code</span> Hakkında</h1>
+<div class="container">
+<div class="service">
+<i class="far fa-handshake"></i>
+<h2>Destek & Geliştirme</h2>
+<p>
+Botunuzda Oluşan Sorunlarda veya Yapamadığınız Kodlarda Sunucumuzdaki Destek Kanallarından Sınırsız Yardım Alabilirsiniz. Developments Code Kod Paylaşım Sitesi, En İyisi Olmaya Geliyoruz
+</p>
+</div>
+<div class="service">
+<i class="fas fa-user-shield"></i>
+<h2>YETKİLİ EKİBİ</h2>
+<p>
+Tecrubeli Yetkili Ekibimiz En İyi Şekilde Sizlere Yardımcı Olmaya Çalışıyor. Ekibimiz Sizlere Daha Güzel Bir Discord Sunucusu Sunmak İçin Çalışmaktadır. Developments Code Kod Paylaşım Sitesi, En İyisi Olmaya Geliyoruz
+</p>
+</div>
+<div class="service">
+<i class="fas fa-code"></i>
+<h2>ÜCRETSİZ KODLAR</h2>
+<p>
+Hiçbir Ücret İstemeden Sizlere Ücretsiz Bir Şekilde Kodları Sunuyoruz. Sadece Arkadaşlarınızı Sunucuya Davet Ederek Daha Özel Kodlara Sahip Olabilirsiniz. Developments Code Kod Paylaşım Sitesi, En İyisi Olmaya Geliyoruz
+</p>
+</div>
+</section>
+
+<div class="discord">
+<div class="text">
+<h1>Sunucumuza Hala<br>Göz Atmadın Mı?</h1>
+<a href="https://discord.gg/UFyVq4e2N3" target="_blank">Hemen Katıl!</a>
+</div>
+<div class="discordImg">
+<img src="https://cdn.discordapp.com/attachments/853166696214691851/963043393204801596/Discord-LogoWordmark-Black.png">
+
+</div>
+</div>
+
+
+<div class="footer">
+<h2><span style="color: #5865f2 ;">Developments <span style="color: #fff ;">Code</span></span></h2>
+<div class="footerLinks">
+<a href="#" style="color: #5865f2 ;"><i class="fa fa-home" aria-hidden="true"></i> Ana Sayfa</a>
+<a href="#about"><i class="far fa-question-circle" aria-hidden="true"></i> Hakkımızda</a>
+<a href="/authorized"><i class="fas fa-user-shield" aria-hidden="true"></i> Yetkililerimiz</a>
+<a href="/discord" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i> Discord</a>
+</div>
+<script>
+	// TOGGLE EFFECT
+		function toggle() {
+			var home = document.getElementById('home');
+			var nav = document.getElementById('navigation');
+			home.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+<script>
+  	// PRELOADER EFFECT
+    	$(window).on("load",function(){
+     	$(".loader-wrapper").fadeOut("slow");
+    	});
+  	</script>
+<script>
+  		// ANIMATE ON SCROLLeqwe
+  		AOS.init();
+	</script>
+<script src="https://purple-silver-helicona.glitch.me/Javascript/main.js"></script>
+</body>
+</html>
+
+
+<p class="copyright">
+© Tüm Hakları Saklıdır
+</p>
+
+</footer>

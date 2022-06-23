@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <%- include('partials/_header'); -%>
+    <%- include('partials/_loader'); -%>
+    <div class="info">
+      <h1>Bilgilendirme</h1>
+      <br>
+      <h5>
+        <span class="red">Not:</span> Kodları görebilmek için sunucumuzda olmanız gerekmektedir!
+        <br><br>
+        <span style="color: #6f53f3;">@Javascript</span>: Bot üzerinden komut ile alınır. #🔎・role-selection Tıklayarak alabilirsiniz.
+        <br>
+        <span style="color: #fffa00;">@Gold </span>: Bot tarafından 10 invite yaptığınızda otomatik olarak verilir.
+        <br>
+        <span style="color: #9bfff2;">@Diamond </span>: Bot tarafından 20 invite yaptığınızda otomatik olarak verilir.
+        <br>
+        <span style="color: #b46161;">@Hazır Sistemler</span>: Bot tarafından 30 invite yaptığınızda otomatik olarak verilir.
+        <br>
+        <span style="color: #c0771c;">@Altyapı </span>: Developments Code Kanalına Abone Olduktan Sonra Altyapı Rolu Verilir.
+      </h5>
+    </div>
+
+    <script>
+      if (localStorage.getItem("mode") != "") {
+        document.body.classList.add(localStorage.getItem("mode"));
+        document.getElementById("mode-btn").checked = true;
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/index.js"></script>
+    <%- include('partials/_footer'); -%>
+  </body>
+</html>

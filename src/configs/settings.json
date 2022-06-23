@@ -1,0 +1,7 @@
+{
+  "mongoURL": "mongodb+srv://louiscodes:yasinbey123@cluster0.uvfcdpq.mongodb.net/?retryWrites=true&w=majority",
+  "clientID": "923305231075389441",
+  "token": "Bak Şonda Aldın",
+  "secret": "ORREAb1v3eRWQxJymExsk6WTcKQNw0Y_", 
+  "callbackURL": "https://developmentscode.tk/callback"
+}

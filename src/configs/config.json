@@ -1,0 +1,17 @@
+{
+  "domain" : "www.developmentscode.tk",
+  "guildID": "949766073086013560",
+  "guildInvite": "https://discord.gg/UFyVq4e2N3",
+  "codeLog": "989245364714483723",
+  "bugLog": "989245364714483723",
+  "ownerRole": "949766162479202324",
+  "adminRole": "949766168334442566",
+  "codeSharer": "949766176345583616",
+  "booster": "949766177293500446",
+  "notCodeSharer": ["949766206569721946", "949766188202881076"],
+  "readySystemsRole": "989246755566657599",
+  "diaRole": "949766199657513060",
+  "goldRole": "949766198604730448",
+  "altyapıRole": "949766197245784185",
+  "normalRole": "949766196142682173"
+}
